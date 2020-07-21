@@ -9,6 +9,7 @@
 #include "CafetariaFunctions.h"
 
 using std::cin;
+using std::cout;
 
 int main()
 {
