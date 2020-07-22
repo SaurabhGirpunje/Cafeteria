@@ -349,13 +349,13 @@ PizzaLoopEnd:
 void Restaurant::Toasts()
 {
     int ToastsChoice, tempToasts;
-    int ToastsPriceArray[3] = {119, 129, 149};
+    int ToastsPriceArray[3] = {119, 119, 129};
 
 AgainToastsLoop:
     cout << "Toasts Menu:" << endl
-         << "#1 Cheese Chilli Toast                   119/-" << endl
-         << "#2 Cheese Corn Toast                     129/-" << endl
-         << "#3 Schezwan Paneer Toast                 149/-" << endl
+         << "#1 Cheese Chilli Toast             119/-" << endl
+         << "#2 Cheese Corn Toast               119/-" << endl
+         << "#3 Schezwan Paneer Toast           129/-" << endl
          << "#4 Exit" << endl;
 
     cout << "Enter barcode number of your choice: ";
@@ -378,7 +378,7 @@ AgainToastsLoop:
 
     case 3:
         CountTotalItems();
-        tempToasts = ToastsPriceArray[3];
+        tempToasts = ToastsPriceArray[2];
         PriceItem = CountTotalPrice(tempToasts);
         CountItem = 0;
         break;
